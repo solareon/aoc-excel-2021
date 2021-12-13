@@ -35,3 +35,9 @@ Invalid syntax. Part 1 requires running a generational LAMBDA() across the input
 # Day 11
 Glowing octopus. Part 1 required building a careful formula to look at the previous values and generationally map out when an octopus' energy level exceeded 10 and then zero it out for the remainder of that round. Because laziness is king each grid is surrounded by Xs as runoff so the formula within each cell in the grid is identical.  Due to the variable length of generations there is a bit of extraneous computations for shorter generations but long enough to capture all the corner cases. At the end of each row the number of zeros in the box is calculated for later sum at Step 100. Pt 2 is simply paste it on down some more until you get a grid of all 0s. Depending on the input this can occur at different step. A SUM()=0 check identifies the winning grid and the step number it occured on.
 Edit: I discovered there is a MAP() function now. Instead of being 23MB it's now closer to ~4MB and should work with any input.
+
+# Day 12
+Something something path finding with caves and nonsense. This is where Excel kind of falls apart. I haven't done this one yet.
+
+# Day 13
+Folding paper. Theory has it you can't fold a single sheet of paper more than 8 times before it spontaneously combusts but in this world you can fold it 12 times. Part 1 consisted of finding the formula of 2y-x and applying to the input. This yields a field of dots that needs to be checked for unique dots and then counted. Part 2 requires completing the 12 folds and then generating the field of dots to reveal the hidden message. A nice touch indeed.
