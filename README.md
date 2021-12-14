@@ -1,6 +1,6 @@
 # aoc-excel-2021
 
-Excel is programming language. This repo archives my attempt to do all of the Advent of Code 2021 entirely in Excel without the use of VBA.
+Excel is a programming language. This repo archives my attempt to do all of the Advent of Code 2021 entirely in Excel without the use of VBA.
 
 # Day 1
 walk in the park. some simple IF statements and SUMs generate the answer.
