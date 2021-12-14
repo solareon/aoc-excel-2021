@@ -41,3 +41,6 @@ Something something path finding with caves and nonsense. This is where Excel ki
 
 # Day 13
 Folding paper. Theory has it you can't fold a single sheet of paper more than 8 times before it spontaneously combusts but in this world you can fold it 12 times. Part 1 consisted of finding the formula of 2y-x and applying to the input. This yields a field of dots that needs to be checked for unique dots and then counted. Part 2 requires completing the 12 folds and then generating the field of dots to reveal the hidden message. A nice touch indeed.
+
+# Day 14
+Giant letter snakes. Part 1 consisted of some elegant XLOOKUP() and LAMBDA() magic filled across a few rows then some COUNTIF() to find the answer. Part 2 reveals that Excel won't let you put more than a 32767 characters into a single cell or CONCAT(). This required a rethinking of the solution where a lookup table is made and then SUM() is combined with (FILTER) to determine the number of combinations created per step. Span this out 40 columns then do a SUMIF() over the last column with a +1 to account for the most common character being the same as the last character of the initial input (sneaky sneaky). I added a part 1 solution check in the second method as a sanity check.
