@@ -44,3 +44,9 @@ Folding paper. Theory has it you can't fold a single sheet of paper more than 8 
 
 # Day 14
 Giant letter snakes. Part 1 consisted of some elegant XLOOKUP() and LAMBDA() magic filled across a few rows then some COUNTIF() to find the answer. Part 2 reveals that Excel won't let you put more than a 32767 characters into a single cell or CONCAT(). This required a rethinking of the solution where a lookup table is made and then SUM() is combined with (FILTER) to determine the number of combinations created per step. Span this out 40 columns then do a SUMIF() over the last column with a +1 to account for the most common character being the same as the last character of the initial input (sneaky sneaky). I added a part 1 solution check in the second method as a sanity check.
+
+# Day 15
+Find a path through a grid. Much pasting and lots of LAMBDA() and arrays yields a result. Part 2 goes from 100x100 to 500x500 pushing the limits of Excel and the memory in my desktop. The resultant files are too large to post but I will paste the formula here that does the heavy lifting if Excel ever opens the file again.
+
+# Day 16
+More limits of excel. I build a half way working state machine to look through the packets but somewhere my logic is screwed up. Shelving this one for now too.
