@@ -50,4 +50,4 @@ Find a path through a grid. Much pasting and lots of LAMBDA() and arrays yields 
 This requires two tables to exist before this table can be filled and it's a matter of filling down. Part 2 uses a similar formula mapped in a lambda to remove a bit more copy pasting but solving the table in one calculation would need probably need 1.4 million rows and 128GB of ram.
 
 # Day 16
-More limits of excel. I build a half way working state machine to look through the packets but somewhere my logic is screwed up. Shelving this one for now too.
+Built a tapeworm formula that decodes the bitstream into the letters from the examples. Part 1 is solved using a helper column to find the version numbers. Additional helper columns decode the other types and the values. Part 2 is hand calculated due to my obtuse part 1 approach. Cells are colored and filtered to hide unneeded data.
