@@ -51,3 +51,6 @@ This requires two tables to exist before this table can be filled and it's a mat
 
 # Day 16
 Built a tapeworm formula that decodes the bitstream into the letters from the examples. Part 1 is solved using a helper column to find the version numbers. Additional helper columns decode the other types and the values. Part 2 is hand calculated due to my obtuse part 1 approach. Cells are colored and filtered to hide unneeded data.
+
+# Day 17
+Trick shots. Part 1 is a math problem ABS(ymin)(ABS(ymin)-1)/2. Part 2 we revert to our good friend the brute force sledge hammer. Velocity tables are built for 1 - xmax and ymin - ABS(ymin). Position data is then plotted for x and y and if it is within the target bounds it is marked. Once all these are plotted and marked MATCH() returns valid velocities that could hit the target plot. The arrays are then combined and moved to another sheet. On this sheet the velocity tables are plotted for the entire set out to 1000 steps. Then positions are calculated out to 1000 steps. Cells that fall into the correct area are marked. These marks are then UNIQUE(), FILTER(), and COUNTIF() to get the part 2 answer. It's ugly and not fast but works.
